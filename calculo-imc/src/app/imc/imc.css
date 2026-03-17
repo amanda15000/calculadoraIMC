@@ -1,0 +1,87 @@
+/* Estilização Geral do Container */
+.calculadora-container {
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+/* Título */
+h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  letter-spacing: -0.5px;
+}
+
+/* Campos de Entrada */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Garante que o padding não quebre a largura */
+  outline: none;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #5a6fd6;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Resultado */
+.resultado-box {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+  animation: fadeIn 0.5s ease;
+}
+
+.resultado-box p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.resultado-box strong {
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+/* Animação suave para aparecer o resultado */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
